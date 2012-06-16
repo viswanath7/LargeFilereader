@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.socialcoding</groupId>
+	<artifactId>experiment</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>experiment</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+	<!-- JUnit test framework -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+		</dependency>
+		<dependency>
+	  		<groupId>org.apache.commons</groupId>
+	  		<artifactId>commons-lang3</artifactId>
+	  		<version>3.1</version>
+	  	</dependency>
+		<dependency>
+			<groupId>com.ancientprogramming.fixedformat4j</groupId>
+			<artifactId>fixedformat4j</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<!--
+		      SLF4j is not a logger in itself, it’s a facade or wrapper that delegates the actual business of logging to one of the more well known logger implementations, 
+		      which is usually Log4J. The idea behind it is that’s its a replacement for that other well known logging facade: Commons Logging.  
+		 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		
+	</dependencies>
+	<repositories>
+	 <repository>
+	   <id>fixedformat4j-repo</id>
+     <url>http://maven.ancientprogramming.com/repository</url>
+	 </repository>
+	</repositories>
+</project>
